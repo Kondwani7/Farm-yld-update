@@ -3,8 +3,7 @@ import {AppBar, makeStyles, IconButton, Typography, Toolbar, Collapse} from '@ma
 import SortIcon from '@material-ui/icons/Sort'; 
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Link as Scroll} from 'react-scroll'
-import 'aframe'
-import {Entity, Scene} from 'aframe-react'
+
 
 const useStyles = makeStyles((theme) =>({
     root:{
@@ -87,14 +86,7 @@ function LandingPage() {
             </div>
             
             </Collapse>
-            <Scene>
-                <Entity
-                    geometry={{primitive: 'box', width: 5}}
-                    material={{color: 'red', roughness: 0.5,}}
-                    scale={{x: 2, y: 2, z: 2}}
-                    position={{x: 0, y: 0, z: -5}}/>
-                />
-            </Scene>
+            
         </div>
 
     )
